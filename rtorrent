@@ -8,8 +8,6 @@ command_args="-o system.daemon.set=true"
 command_background=true
 pidfile="/run/rtorrent.pid"
 
-
-
 depend()
 {
    use net ypbind nis
