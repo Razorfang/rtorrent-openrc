@@ -8,7 +8,10 @@ command_args="-o system.daemon.set=true"
 command_background=true
 pidfile="/run/rtorrent.pid"
 
+
+
 depend()
 {
-   need net
+   use net ypbind nis
+   after slapd mysqld postgresql
 }
